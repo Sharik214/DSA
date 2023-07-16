@@ -27,7 +27,7 @@ struct node*headlinked(struct node * head){
     secound->data=30;
     secound->next=third;
     third->data=40;
-   third->next=NULL;
+   third->next=head;
   headlinked(head);
     return 0;
  }
