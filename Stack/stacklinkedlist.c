@@ -79,3 +79,4 @@ void view(){
         printf(:"%d",stack[i]);
     }
 }
+}
