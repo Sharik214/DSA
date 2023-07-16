@@ -52,7 +52,7 @@ void push(int item){
 
     }
     else {
-    temo->next=top;
+    temp->next=top;
     top=temp;
     }
     void pop(){
