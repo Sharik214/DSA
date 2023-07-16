@@ -77,7 +77,5 @@ void view(){
     else {
     for (int i=0; i<top; i++) {
         printf(:"%d",stack[i]);
-    
-    }
     }
 }
