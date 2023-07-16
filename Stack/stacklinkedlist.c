@@ -9,7 +9,7 @@ void push(int item);
 void pop();
 void veiw();
 
-}
+
 struct node *top=NULL;
 int main(){
      int ch;
@@ -22,6 +22,7 @@ int main(){
 }
     else if (ch==2){
         item=pop();
+    }
         if(item==-1){
             printf("under flow");
         }
