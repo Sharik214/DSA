@@ -4,7 +4,10 @@ struct node{
 int data;
 struct node * next
 };
-void push(int item){
+struct node *top==null;
+void push(int item);
+void pop();
+void veiw();
 
 }
 struct node *top=NULL;
@@ -12,21 +15,27 @@ int main(){
      int ch;
     printf("1 for push 2 for pop 3 for view \n");
     scanf("%d",&ch);
-    if(ch==1)[
+    if(ch==1){
         printf("enter the push element");
         scanf("%d",&item);
         push(item);
-    ]
+}
     else if (ch==2){
         item=pop();
         if(item==-1){
             printf("under flow");
         }
-        else[
+        else{
             printf("poped item %d");
-        ]
     }
+
+         else if(ch==3){
+              view();
 }
+else{
+printf("illegal entry");
+}
+    }
 void push(int item){
     temp=(struct node*)malloc(sizeof(struct node));
     if(top==NULL){
