@@ -63,7 +63,7 @@ void push(int item){
             item=temp->data;
             temp=top;
             top=top->next;
-            free(temp)
+            free(temp);
             return temp;
         }
     
