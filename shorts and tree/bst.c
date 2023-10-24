@@ -8,6 +8,13 @@ struct node{
 struct node*root=NULL;
 int main(){
     create_tree();
+printf("pre_oder traversal")
+    pre_oder();
+    printf("in_oder traversal")
+    in_oder();
+    printf("post_oder traversal")
+    post_oder();
+    
     return 0;
 }
 void create_tree(){
@@ -52,3 +59,40 @@ void create_tree(){
     }
 
 }
+void pre_order(){
+    if(root==NULL){
+ return 0;
+    }
+else{
+     printf("%d",root->data);
+    pre_order(root->left);
+    pre_order(root->right);
+    
+}
+}
+void in_order(){
+    if(root==NULL){
+ return 0;
+    }
+else{
+     
+    in_order(root->left);
+     printf("%d",root->data);
+    in_order(root->right);
+    
+}
+}
+ void in_order(){
+    if(root==NULL){
+ return 0;
+    }
+else{
+     
+    post_order(root->left);
+     post_order(root->right);
+     printf("%d",root->data);
+    
+    
+}
+}
+
